@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "nazarweaponary",
+	"version": "${version}",
+	"name": "NazarWeaponary",
+	"description": "Test mod with weapons and etc. made for Nazar server",
+	"authors": [
+		"CbIPOK!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/nazarweaponary/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.bebrikmods.nazarweaponary.TutorialMod"
+		]
+	},
+	"mixins": [
+
+	],
+	"depends": {
+		"fabricloader": ">=0.14.19",
+		"minecraft": "~1.19.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
