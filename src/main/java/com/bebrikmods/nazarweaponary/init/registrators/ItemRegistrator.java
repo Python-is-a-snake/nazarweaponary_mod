@@ -8,7 +8,7 @@ import net.minecraft.util.registry.Registry;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MyItemRegistrator {
+public class ItemRegistrator {
     private static Map<String, Item> MOD_ITEM = new HashMap<>();
 
     public static void addItem(String path, Item item){

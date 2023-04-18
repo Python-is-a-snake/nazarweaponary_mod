@@ -11,7 +11,7 @@ import net.minecraft.util.registry.Registry;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MyBlockRegistrator {
+public class BlockRegistrator {
 
     private static Map<String, Block> MOD_BLOCKS = new HashMap<>();
 
@@ -19,7 +19,7 @@ public class MyBlockRegistrator {
         //create item that represent block and add it to BUILDING_BLOCKS group
         BlockItem blockItem = new BlockItem(block, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS));
 
-        MyItemRegistrator.addItem(path, blockItem);
+        ItemRegistrator.addItem(path, blockItem);
         MOD_BLOCKS.put(path, block);
     }
 

@@ -10,7 +10,10 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 2
+              "count": {
+                "min": 2,
+                "max": 4
+              }
             }
           ]
         }

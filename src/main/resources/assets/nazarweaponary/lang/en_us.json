@@ -1,6 +1,7 @@
 {
-  "item.nazarweaponary.ruby": "Nazar`s Weaponary Ruby",
-  "item.nazarweaponary.sapphire": "Nazar`s Weaponary Sapphire",
+  "item.nazarweaponary.ruby": "#NW# Ruby",
+  "item.nazarweaponary.sapphire": "#NW# Sapphire",
+  "item.nazarweaponary.amethyst": "#NW# Amethyst",
 
-  "block.nazarweaponary.ruby_block": "Nazar`s Weaponary Ruby Block"
+  "block.nazarweaponary.ruby_block": "#NW# Ruby Block"
 }
