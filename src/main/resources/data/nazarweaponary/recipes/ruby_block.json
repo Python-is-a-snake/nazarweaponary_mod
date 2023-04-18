@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    " R "
+  ],
+  "key": {
+    "#": {
+      "item": "nazarweaponary:ruby"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "nazarweaponary:ruby_block",
+    "count": 1
+  }
+}

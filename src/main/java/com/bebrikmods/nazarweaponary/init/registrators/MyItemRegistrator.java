@@ -1,6 +1,6 @@
-package com.bebrikmods.nazarweaponary.MYTRIES.init.registrators;
+package com.bebrikmods.nazarweaponary.init.registrators;
 
-import com.bebrikmods.nazarweaponary.MYTRIES.init.Initializer;
+import com.bebrikmods.nazarweaponary.init.Initializer;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;

@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.bebrikmods.nazarweaponary.MYTRIES.init.Initializer"
+			"com.bebrikmods.nazarweaponary.init.Initializer"
 		]
 	},
 	"mixins": [

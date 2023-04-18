@@ -1,6 +1,6 @@
-package com.bebrikmods.nazarweaponary.MYTRIES.entries.items;
+package com.bebrikmods.nazarweaponary.entitys.items;
 
-import com.bebrikmods.nazarweaponary.MYTRIES.init.registrators.MyItemRegistrator;
+import com.bebrikmods.nazarweaponary.init.registrators.MyItemRegistrator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;

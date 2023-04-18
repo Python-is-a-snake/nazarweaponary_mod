@@ -1,6 +1,6 @@
-package com.bebrikmods.nazarweaponary.MYTRIES.init.registrators;
+package com.bebrikmods.nazarweaponary.init.registrators;
 
-import com.bebrikmods.nazarweaponary.MYTRIES.init.Initializer;
+import com.bebrikmods.nazarweaponary.init.Initializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
