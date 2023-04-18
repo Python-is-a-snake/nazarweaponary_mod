@@ -13,15 +13,17 @@ public class ModItems {
     //Items
     public static final Item RUBY = new Item(new FabricItemSettings().group(ItemGroup.MATERIALS).fireproof().rarity(Rarity.UNCOMMON).maxCount(16));
     public static final Item SAPPHIRE = new Item(new FabricItemSettings().group(ItemGroup.MATERIALS).fireproof().rarity(Rarity.UNCOMMON).maxCount(16));
+    public static final Item MY_ITEM = new Item(new FabricItemSettings().group(ItemGroup.MATERIALS).fireproof().rarity(Rarity.UNCOMMON).maxCount(16));
 
     //Block Items
     public static final BlockItem RUBY_BLOCK = new BlockItem(ModBlocks.RUBY_BLOCK, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS));
 
     //modid:itemName
-    public static void registerItems(){
-        Registry.register(Registry.ITEM, new Identifier(TutorialMod.MOD_ID, "ruby"), RUBY);
-        Registry.register(Registry.ITEM, new Identifier(TutorialMod.MOD_ID, "sapphire"), SAPPHIRE);
-        Registry.register(Registry.ITEM, new Identifier(TutorialMod.MOD_ID, "ruby_block"), RUBY_BLOCK);
-    }
+//    public static void registerItems(){
+//        Registry.register(Registry.ITEM, new Identifier(TutorialMod.MOD_ID, "ruby"), RUBY);
+//        Registry.register(Registry.ITEM, new Identifier(TutorialMod.MOD_ID, "sapphire"), SAPPHIRE);
+//        Registry.register(Registry.ITEM, new Identifier(TutorialMod.MOD_ID, "ruby_block"), RUBY_BLOCK);
+//        //Registry.register(Registry.ITEM, new Identifier(TutorialMod.MOD_ID, "my_item"), MY_ITEM);
+//    }
 
 }

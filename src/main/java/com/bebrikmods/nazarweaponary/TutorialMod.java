@@ -1,16 +1,24 @@
 package com.bebrikmods.nazarweaponary;
 
+//import com.bebrikmods.nazarweaponary.MYTRIES.entries.items.MyItem;
+import com.bebrikmods.nazarweaponary.MYTRIES.init.Initializer;
+import com.bebrikmods.nazarweaponary.MYTRIES.init.registrators.MyItemRegistrator;
 import com.bebrikmods.nazarweaponary.registry.ModBlocks;
 import com.bebrikmods.nazarweaponary.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.item.Item;
 
-public class TutorialMod implements ModInitializer {
+//implemented ModInitializer
+public class TutorialMod{
 
-    public static final String MOD_ID = "nazarweaponary";
+//    public static final String MOD_ID = "nazarweaponary";
 
-    @Override
+//    public static final Item myTestItem = new MyItem();
+
     public void onInitialize() {
-        ModItems.registerItems();
-        ModBlocks.registerBlocks();
+
+//        Initializer.initialize();
+//        ModBlocks.registerBlocks();
+//        ModItems.registerItems();
     }
 }

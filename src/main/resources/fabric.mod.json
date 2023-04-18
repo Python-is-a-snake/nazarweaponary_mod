@@ -3,7 +3,7 @@
 	"id": "nazarweaponary",
 	"version": "${version}",
 	"name": "NazarWeaponary",
-	"description": "Test mod with weapons and etc. made for Nazar server",
+	"description": "Test mod with weapons and etc. made for Nazar`s server",
 	"authors": [
 		"CbIPOK!"
 	],
@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.bebrikmods.nazarweaponary.TutorialMod"
+			"com.bebrikmods.nazarweaponary.MYTRIES.init.Initializer"
 		]
 	},
 	"mixins": [
