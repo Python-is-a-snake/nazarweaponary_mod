@@ -1,6 +1,7 @@
 {
   "replace": "false",
   "values": [
-    "nazarweaponary:ruby_block"
+    "nazarweaponary:ruby_ore",
+    "nazarweaponary:sapphire_ore"
   ]
 }
