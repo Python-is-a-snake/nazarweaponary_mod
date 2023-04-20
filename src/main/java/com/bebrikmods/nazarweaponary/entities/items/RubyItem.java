@@ -11,5 +11,4 @@ public class RubyItem extends Item {
         super(new FabricItemSettings().group(ItemGroup.MATERIALS).fireproof().rarity(Rarity.UNCOMMON).maxCount(64));
         ItemRegistrator.addItem(path, this);
     }
-
 }

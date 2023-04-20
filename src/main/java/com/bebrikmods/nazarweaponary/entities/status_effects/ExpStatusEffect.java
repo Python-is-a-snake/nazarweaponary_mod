@@ -8,7 +8,7 @@ import net.minecraft.entity.player.PlayerEntity;
 
 public class ExpStatusEffect extends StatusEffect {
 
-  private static final int TICKS_PER_SECOND = 10;
+  private static final int TICKS_PER_SECOND = 60;
   private int ticksElapsed;
 
   public ExpStatusEffect(String path) {

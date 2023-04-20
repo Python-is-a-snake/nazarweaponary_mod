@@ -10,11 +10,9 @@ import net.minecraft.util.math.MathHelper;
 import java.util.Random;
 
 public class RubyOre extends Block {
-    private String path;
 
     public RubyOre(String path) {
         super(FabricBlockSettings.of(Material.METAL).strength(3.0f).requiresTool());
-        this.path = path;
         BlockRegistrator.addBlock(path, this);
     }
 

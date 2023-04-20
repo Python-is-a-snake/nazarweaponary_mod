@@ -11,5 +11,4 @@ public class SwordHandlerItem extends Item {
         super(new FabricItemSettings().group(ItemGroup.COMBAT).fireproof().rarity(Rarity.UNCOMMON).maxCount(64));
         ItemRegistrator.addItem(path, this);
     }
-
 }

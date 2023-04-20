@@ -16,7 +16,7 @@ public abstract class ModSword extends SwordItem {
     private ArrayList<StatusEffect> effects;
     private static final Settings settings = new Settings().fireproof().rarity(Rarity.EPIC).group(ItemGroup.COMBAT);
 
-    public ModSword(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, StatusEffect... statusEffects) {
+    protected ModSword(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, StatusEffect... statusEffects) {
         super(toolMaterial, attackDamage, attackSpeed, settings);
         this.effects = new ArrayList<>(Arrays.asList(statusEffects));
 

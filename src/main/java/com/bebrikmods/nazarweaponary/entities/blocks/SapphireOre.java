@@ -6,11 +6,9 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 
 public class SapphireOre extends Block {
-    private String path;
 
     public SapphireOre(String path) {
         super(FabricBlockSettings.of(Material.METAL).strength(3.0f).requiresTool());
-        this.path = path;
         BlockRegistrator.addBlock(path, this);
     }
 }

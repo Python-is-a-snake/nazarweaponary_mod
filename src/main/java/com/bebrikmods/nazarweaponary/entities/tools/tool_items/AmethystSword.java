@@ -13,5 +13,4 @@ public class AmethystSword extends ModSword{
         super(new AmethystToolMaterial(), 5, -1.0F, StatusEffectRegistrator.MOD_EFFECTS.get("exp"));
         ItemRegistrator.addItem(path, this);
     }
-
 }

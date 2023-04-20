@@ -8,10 +8,8 @@ import net.minecraft.item.SwordItem;
 import net.minecraft.util.Rarity;
 
 public class SapphireSword extends ModSword {
-
     public SapphireSword(String path) {
         super(new SapphireToolMaterial(), 5, -1.0F, StatusEffects.SPEED);
         ItemRegistrator.addItem(path, this);
     }
-
 }

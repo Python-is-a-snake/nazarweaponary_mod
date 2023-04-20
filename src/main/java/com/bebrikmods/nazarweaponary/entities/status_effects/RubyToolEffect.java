@@ -13,7 +13,6 @@ public class RubyToolEffect extends StatusEffect {
             0xff0000 // Колір ефекту (червоний)
     );
   }
-
   @Override
   public void applyUpdateEffect(LivingEntity entity, int amplifier) {
     // Тут ви можете визначити, що буде відбуватись кожен тік (20 разів на секунду)
