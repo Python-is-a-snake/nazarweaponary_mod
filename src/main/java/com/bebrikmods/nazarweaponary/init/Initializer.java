@@ -5,9 +5,10 @@ import com.bebrikmods.nazarweaponary.entities.blocks.SapphireOre;
 import com.bebrikmods.nazarweaponary.entities.items.AmethystItem;
 import com.bebrikmods.nazarweaponary.entities.items.RubyItem;
 import com.bebrikmods.nazarweaponary.entities.items.SapphireItem;
+import com.bebrikmods.nazarweaponary.entities.items.SwordHandlerItem;
 import com.bebrikmods.nazarweaponary.entities.status_effects.ExpStatusEffect;
-import com.bebrikmods.nazarweaponary.entities.tools.tool_items.RubyToolSword;
-import com.bebrikmods.nazarweaponary.entities.tools.tool_items.SapphireToolSword;
+import com.bebrikmods.nazarweaponary.entities.tools.tool_items.RubySword;
+import com.bebrikmods.nazarweaponary.entities.tools.tool_items.SapphireSword;
 import com.bebrikmods.nazarweaponary.init.generators.OreGenerator;
 import com.bebrikmods.nazarweaponary.init.registrators.BlockRegistrator;
 import com.bebrikmods.nazarweaponary.init.registrators.ItemRegistrator;
@@ -16,10 +17,6 @@ import net.fabricmc.api.ModInitializer;
 import net.minecraft.block.Block;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.item.Item;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
-
-import java.util.ArrayList;
 
 public class Initializer implements ModInitializer{
 
@@ -46,9 +43,11 @@ public class Initializer implements ModInitializer{
 
     public static final StatusEffect EXP = new ExpStatusEffect();
 
-    public static final Item RUBY_SWORD = new RubyToolSword("ruby_sword");
+    public static final Item RUBY_SWORD = new RubySword("ruby_sword");
 
-    public static final Item SAPPHIRE_SWORD = new SapphireToolSword("sapphire_sword");
+    public static final Item SAPPHIRE_SWORD = new SapphireSword("sapphire_sword");
+
+    public static final Item SWORD_HANDLER = new SwordHandlerItem("sword_handler");
 
     public  void onInitialize() {
         new OreGenerator("ruby", RUBY_ORE, 5, 5, 65);

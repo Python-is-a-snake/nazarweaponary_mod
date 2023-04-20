@@ -7,11 +7,9 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Rarity;
 
 public class SapphireItem extends Item {
-    private String path;
 
     public SapphireItem(String path) {
         super(new FabricItemSettings().group(ItemGroup.MATERIALS).fireproof().rarity(Rarity.UNCOMMON).maxCount(64));
-        this.path = path;
         ItemRegistrator.addItem(path, this);
     }
 

@@ -7,11 +7,8 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Rarity;
 
 public class RubyItem extends Item {
-    private String path;
-
     public RubyItem(String path) {
         super(new FabricItemSettings().group(ItemGroup.MATERIALS).fireproof().rarity(Rarity.UNCOMMON).maxCount(64));
-        this.path = path;
         ItemRegistrator.addItem(path, this);
     }
 
