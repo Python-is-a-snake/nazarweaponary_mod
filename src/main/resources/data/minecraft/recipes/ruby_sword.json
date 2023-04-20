@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#",
+    "N"
+  ],
+  "key": {
+    "#": {
+      "item": "nazarweaponary:ruby"
+    },
+    "N": {
+      "item": "nazarweaponary:sword_handler"
+    }
+  },
+  "result": {
+    "item": "nazarweaponary:ruby_sword",
+    "count": 1
+  }
+}
