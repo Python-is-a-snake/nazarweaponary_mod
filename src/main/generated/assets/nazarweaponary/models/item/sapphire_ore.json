@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "nazarweaponary:item/sapphire_ore"
-  }
+  "parent": "nazarweaponary:block/sapphire_ore"
 }

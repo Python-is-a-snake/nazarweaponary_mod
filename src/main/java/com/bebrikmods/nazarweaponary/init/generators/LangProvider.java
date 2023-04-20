@@ -28,7 +28,6 @@ public class LangProvider extends FabricLanguageProvider {
             translationBuilder.add(currentBlock, "#NW# " + currentBlock.getClass().getSimpleName().replaceAll("([a-z])([A-Z])", "$1 $2"));
         }
 
-
         for(String key : ItemRegistrator.MOD_ITEM.keySet()){
             Item currentItem = ItemRegistrator.MOD_ITEM.get(key);
             if(currentItem instanceof BlockItem){
