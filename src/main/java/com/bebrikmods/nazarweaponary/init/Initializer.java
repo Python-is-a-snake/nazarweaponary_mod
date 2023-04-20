@@ -11,6 +11,7 @@ import com.bebrikmods.nazarweaponary.entities.tools.tool_items.SapphireToolSword
 import com.bebrikmods.nazarweaponary.init.generators.OreGenerator;
 import com.bebrikmods.nazarweaponary.init.registrators.BlockRegistrator;
 import com.bebrikmods.nazarweaponary.init.registrators.ItemRegistrator;
+import com.bebrikmods.nazarweaponary.init.registrators.StatusEffectRegistrator;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.block.Block;
 import net.minecraft.entity.effect.StatusEffect;
@@ -45,7 +46,7 @@ public class Initializer implements ModInitializer{
 
     public static final StatusEffect EXP = new ExpStatusEffect();
 
-    public static final Item RUBY_SWORD = new RubyToolSword("ruby_sword", EXP);
+    public static final Item RUBY_SWORD = new RubyToolSword("ruby_sword");
 
     public static final Item SAPPHIRE_SWORD = new SapphireToolSword("sapphire_sword");
 
@@ -55,8 +56,7 @@ public class Initializer implements ModInitializer{
 
         ItemRegistrator.registerAllItems();
         BlockRegistrator.registerAllBlocks();
-
-        Registry.register(Registry.STATUS_EFFECT, new Identifier(MOD_ID, "exp"), EXP);
+        StatusEffectRegistrator.registerAllItems();
     }
 
 }

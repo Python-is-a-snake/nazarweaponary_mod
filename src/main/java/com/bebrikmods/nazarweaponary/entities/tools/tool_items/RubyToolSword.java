@@ -12,22 +12,18 @@ import net.minecraft.item.*;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Rarity;
 import net.minecraft.world.World;
-import net.fabricmc.fabric.api.client.model.JsonGenerator;
 
-public class RubyToolSword extends SwordItem {
+public class RubyToolSword extends SwordItem{
     private String path;
     private StatusEffect effect;
 
-//    @Override
-//    public void usageTick(World world, LivingEntity user, ItemStack stack, int remainingUseTicks) {
-//        super.usageTick(world, user, stack, remainingUseTicks);
-//    }
-
-    public RubyToolSword(String path, StatusEffect effect) {
+    public RubyToolSword(String path) {
         super(new RubyToolMaterial(), 5, -1.0F, new Item.Settings().fireproof().rarity(Rarity.EPIC).group(ItemGroup.COMBAT));
         ItemRegistrator.addItem(path, this);
-        this.effect = effect;
+        this.effect = StatusEffects.STRENGTH;
     }
+
+
 
     @Override
     public void onStoppedUsing(ItemStack stack, World world, LivingEntity user, int remainingUseTicks) {
@@ -46,7 +42,9 @@ public class RubyToolSword extends SwordItem {
     @Override
     public void onCraft(ItemStack stack, World world, PlayerEntity player) {
         if (!world.isClient) {
-            player.addStatusEffect(new StatusEffectInstance(effect, Integer.MAX_VALUE));
+            player.addStatusEffect(new StatusEffectInstance(effect, 20));
         }
     }
+
+
 }
