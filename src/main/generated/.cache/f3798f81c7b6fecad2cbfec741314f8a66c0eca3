@@ -1,13 +1,14 @@
-// 1.19.2	2023-04-21T01:12:02.1392599	Models
-a1d1cd824d95fdb74c943c804c36356f1e68ae58 assets\nazarweaponary\models\item\amethyst.json
+// 1.19.2	2023-04-21T01:35:02.6218201	Models
 cd0e326b541f6617c04957de74a77eaec295a79e assets\nazarweaponary\models\item\sword_handler.json
 fcdd8a5ed152b20ce080673dabe15fb4dbc0bf9a assets\nazarweaponary\models\block\ruby_ore.json
-acfcb065dbd9bc12aae8c5aa19cf7faf1b302002 assets\nazarweaponary\models\block\sapphire_ore.json
-aeab78ba1dcfd9136fa09cdad191756e9726b73f assets\nazarweaponary\models\item\sapphire_ore.json
 e6389c547780d4d2f9d61502323d92d997341bb3 assets\nazarweaponary\models\item\ruby_sword.json
-aeb2c7fc295faf8e70ad38599eae3d42334640e9 assets\nazarweaponary\models\item\sapphire.json
 754a1b93b0fa4fb76325b83f0914d2c614876b85 assets\nazarweaponary\models\item\ruby.json
 9346659a7969c7c1609750fcb33bed47c3aeff4b assets\nazarweaponary\blockstates\ruby_ore.json
+a1d1cd824d95fdb74c943c804c36356f1e68ae58 assets\nazarweaponary\models\item\amethyst.json
+e792b34748bd03f60a1724dbd88720366193f988 assets\nazarweaponary\models\item\amethyst_sword.json
+acfcb065dbd9bc12aae8c5aa19cf7faf1b302002 assets\nazarweaponary\models\block\sapphire_ore.json
+aeab78ba1dcfd9136fa09cdad191756e9726b73f assets\nazarweaponary\models\item\sapphire_ore.json
+aeb2c7fc295faf8e70ad38599eae3d42334640e9 assets\nazarweaponary\models\item\sapphire.json
 c75900f9c01492efe187b07b224c469099bcc6f7 assets\nazarweaponary\blockstates\sapphire_ore.json
 62b5d9dcf27038d1e5b9a2f4bc6bf6ca1487618c assets\nazarweaponary\models\item\sapphire_sword.json
 1fe7eac7058a6fcf26f59129ccb957fb1b752d2a assets\nazarweaponary\models\item\ruby_ore.json

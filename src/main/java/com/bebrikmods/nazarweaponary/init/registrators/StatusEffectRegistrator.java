@@ -18,7 +18,7 @@ public class StatusEffectRegistrator {
         MOD_EFFECTS.put(path, effect);
     }
 
-    public static void registerAllItems(){
+    public static void registerAllEffects(){
         for(String path : MOD_EFFECTS.keySet()){
             Registry.register(Registry.STATUS_EFFECT, new Identifier(MOD_ID, path), MOD_EFFECTS.get(path));
         }

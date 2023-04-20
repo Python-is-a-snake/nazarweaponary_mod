@@ -7,6 +7,7 @@ import com.bebrikmods.nazarweaponary.entities.items.RubyItem;
 import com.bebrikmods.nazarweaponary.entities.items.SapphireItem;
 import com.bebrikmods.nazarweaponary.entities.items.SwordHandlerItem;
 import com.bebrikmods.nazarweaponary.entities.status_effects.ExpStatusEffect;
+import com.bebrikmods.nazarweaponary.entities.tools.tool_items.AmethystSword;
 import com.bebrikmods.nazarweaponary.entities.tools.tool_items.RubySword;
 import com.bebrikmods.nazarweaponary.entities.tools.tool_items.SapphireSword;
 import com.bebrikmods.nazarweaponary.init.generators.OreGenerator;
@@ -48,6 +49,7 @@ public class Initializer implements ModInitializer{
     public static final Item SAPPHIRE_SWORD = new SapphireSword("sapphire_sword");
 
     public static final Item SWORD_HANDLER = new SwordHandlerItem("sword_handler");
+    private static final Item AMETHYST_SWORD = new AmethystSword("amethyst_sword");
 
     public  void onInitialize() {
         new OreGenerator("ruby", RUBY_ORE, 5, 5, 65);
@@ -55,7 +57,7 @@ public class Initializer implements ModInitializer{
 
         ItemRegistrator.registerAllItems();
         BlockRegistrator.registerAllBlocks();
-        StatusEffectRegistrator.registerAllItems();
+        StatusEffectRegistrator.registerAllEffects();
     }
 
 }
