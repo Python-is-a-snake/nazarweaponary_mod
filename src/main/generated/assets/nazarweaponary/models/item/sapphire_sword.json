@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handled",
   "textures": {
-    "layer0": "nazarweaponary:item/ruby_sword"
+    "layer0": "nazarweaponary:item/sapphire_sword"
   }
 }

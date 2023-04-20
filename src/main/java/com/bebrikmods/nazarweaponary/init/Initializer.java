@@ -5,13 +5,18 @@ import com.bebrikmods.nazarweaponary.entities.blocks.SapphireOre;
 import com.bebrikmods.nazarweaponary.entities.items.AmethystItem;
 import com.bebrikmods.nazarweaponary.entities.items.RubyItem;
 import com.bebrikmods.nazarweaponary.entities.items.SapphireItem;
+import com.bebrikmods.nazarweaponary.entities.status_effects.ExpStatusEffect;
 import com.bebrikmods.nazarweaponary.entities.tools.tool_items.RubyToolSword;
+import com.bebrikmods.nazarweaponary.entities.tools.tool_items.SapphireToolSword;
 import com.bebrikmods.nazarweaponary.init.generators.OreGenerator;
 import com.bebrikmods.nazarweaponary.init.registrators.BlockRegistrator;
 import com.bebrikmods.nazarweaponary.init.registrators.ItemRegistrator;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.block.Block;
+import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.item.Item;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 import java.util.ArrayList;
 
@@ -24,6 +29,9 @@ public class Initializer implements ModInitializer{
         3 OPT.) ADD RECIPES TO data..recipes
         4 OPT.)ADD block_name.json TO data..loot_tables - CREATES LOOT DROP TABLES (from mining block)
      */
+
+
+    //DO NOT CHANGE THIS
     public static final String MOD_ID = "nazarweaponary";
 
 
@@ -33,8 +41,13 @@ public class Initializer implements ModInitializer{
     public static final Item RUBY = new RubyItem("ruby");
     public static final Block RUBY_ORE = new RubyOre("ruby_ore");
     public static final Item AMETHYST = new AmethystItem("amethyst");
-    public static final Item RUBY_SWORD = new RubyToolSword("ruby_sword");
 
+
+    public static final StatusEffect EXP = new ExpStatusEffect();
+
+    public static final Item RUBY_SWORD = new RubyToolSword("ruby_sword", EXP);
+
+    public static final Item SAPPHIRE_SWORD = new SapphireToolSword("sapphire_sword");
 
     public  void onInitialize() {
         new OreGenerator("ruby", RUBY_ORE, 5, 5, 65);
@@ -43,6 +56,7 @@ public class Initializer implements ModInitializer{
         ItemRegistrator.registerAllItems();
         BlockRegistrator.registerAllBlocks();
 
+        Registry.register(Registry.STATUS_EFFECT, new Identifier(MOD_ID, "exp"), EXP);
     }
 
 }

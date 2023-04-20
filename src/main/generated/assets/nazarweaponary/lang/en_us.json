@@ -4,5 +4,8 @@
   "item.nazarweaponary.amethyst": "#NW# Amethyst Item",
   "item.nazarweaponary.ruby": "#NW# Ruby Item",
   "item.nazarweaponary.ruby_sword": "#NW# Ruby Tool Sword",
-  "item.nazarweaponary.sapphire": "#NW# Sapphire Item"
+  "item.nazarweaponary.sapphire": "#NW# Sapphire Item",
+  "item.nazarweaponary.sapphire_sword": "#NW# Sapphire Tool Sword",
+
+  "effect.nazarweaponary.exp": "Experience"
 }

@@ -1,12 +1,9 @@
 package com.bebrikmods.nazarweaponary.init.generators;
 
-import com.bebrikmods.nazarweaponary.init.Initializer;
 import com.bebrikmods.nazarweaponary.init.registrators.BlockRegistrator;
 import com.bebrikmods.nazarweaponary.init.registrators.ItemRegistrator;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.block.Block;
-import net.minecraft.client.search.SuffixArray;
 import net.minecraft.data.client.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -36,7 +33,6 @@ public class ModelProvider extends FabricModelProvider {
             }else {
                 itemModelGenerator.register(currentItem, Models.GENERATED);
             }
-
         }
     }
 }
