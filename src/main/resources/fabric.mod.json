@@ -15,9 +15,13 @@
 	"icon": "assets/nazarweaponary/icon.png",
 	"environment": "*",
 	"entrypoints": {
+		"fabric-datagen": [
+			"com.bebrikmods.nazarweaponary.init.generators.DataGenerator"
+		],
 		"main": [
 			"com.bebrikmods.nazarweaponary.init.Initializer"
 		]
+
 	},
 	"mixins": [
 

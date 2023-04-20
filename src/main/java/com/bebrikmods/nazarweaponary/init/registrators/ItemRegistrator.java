@@ -9,7 +9,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ItemRegistrator {
-    private static Map<String, Item> MOD_ITEM = new HashMap<>();
+    public static Map<String, Item> MOD_ITEM = new HashMap<>();
+
+    public static Map<String, Item> getModItem() {
+        return MOD_ITEM;
+    }
 
     public static void addItem(String path, Item item){
         MOD_ITEM.put(path, item);

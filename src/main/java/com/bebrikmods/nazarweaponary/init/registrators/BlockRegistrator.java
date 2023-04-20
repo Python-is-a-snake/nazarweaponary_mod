@@ -13,7 +13,11 @@ import java.util.Map;
 
 public class BlockRegistrator {
 
-    private static Map<String, Block> MOD_BLOCKS = new HashMap<>();
+    public static Map<String, Block> MOD_BLOCKS = new HashMap<>();
+
+    public static Map<String, Block> getModBlocks() {
+        return MOD_BLOCKS;
+    }
 
     public static void addBlock(String path, Block block){
         //create item that represent block and add it to BUILDING_BLOCKS group

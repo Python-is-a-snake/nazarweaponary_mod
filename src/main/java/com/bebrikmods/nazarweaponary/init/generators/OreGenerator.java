@@ -1,5 +1,6 @@
-package com.bebrikmods.nazarweaponary.init;
+package com.bebrikmods.nazarweaponary.init.generators;
 
+import com.bebrikmods.nazarweaponary.init.Initializer;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.block.Block;
@@ -12,8 +13,6 @@ import net.minecraft.world.gen.placementmodifier.CountPlacementModifier;
 import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
 import net.minecraft.util.registry.Registry;
-
-
 import java.util.Arrays;
 
 public class OreGenerator {
