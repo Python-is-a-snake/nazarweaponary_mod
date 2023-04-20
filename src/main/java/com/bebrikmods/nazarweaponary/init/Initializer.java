@@ -42,7 +42,7 @@ public class Initializer implements ModInitializer{
     public static final Item AMETHYST = new AmethystItem("amethyst");
 
 
-    public static final StatusEffect EXP = new ExpStatusEffect();
+    public static final StatusEffect EXP = new ExpStatusEffect("exp");
 
     public static final Item RUBY_SWORD = new RubySword("ruby_sword");
 
@@ -55,9 +55,10 @@ public class Initializer implements ModInitializer{
         new OreGenerator("ruby", RUBY_ORE, 5, 5, 65);
         new OreGenerator("sapphire", SAPPHIRE_ORE, 5, 5, 65);
 
+        StatusEffectRegistrator.registerAllEffects();
         ItemRegistrator.registerAllItems();
         BlockRegistrator.registerAllBlocks();
-        StatusEffectRegistrator.registerAllEffects();
+
     }
 
 }

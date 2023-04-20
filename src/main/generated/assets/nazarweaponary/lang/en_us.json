@@ -1,6 +1,7 @@
 {
   "block.nazarweaponary.ruby_ore": "#NW# Ruby Ore",
   "block.nazarweaponary.sapphire_ore": "#NW# Sapphire Ore",
+  "effect.nazarweaponary.exp": "#NW# Exp Status Effect",
   "item.nazarweaponary.amethyst": "#NW# Amethyst Item",
   "item.nazarweaponary.amethyst_sword": "#NW# Amethyst Sword",
   "item.nazarweaponary.ruby": "#NW# Ruby Item",
