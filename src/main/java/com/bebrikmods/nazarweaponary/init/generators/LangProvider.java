@@ -29,7 +29,7 @@ public class LangProvider extends FabricLanguageProvider {
         for(String key : ItemRegistrator.MOD_ITEM.keySet()){
             Item currentItem = ItemRegistrator.MOD_ITEM.get(key);
             if(currentItem instanceof ArmorItem || currentItem instanceof BlockItem){
-                continue; // Lang files collision here
+                continue; // Lang files (or tags) collision here
             }
             translationBuilder.add(currentItem,
                     PREFIX + currentItem.getClass().getSimpleName().replaceAll("([a-z])([A-Z])", "$1 $2"));
