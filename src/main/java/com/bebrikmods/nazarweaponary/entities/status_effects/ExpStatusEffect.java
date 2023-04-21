@@ -16,18 +16,17 @@ public class ExpStatusEffect extends StatusEffect {
 
   @Override
   public boolean canApplyUpdateEffect(int duration, int amplifier) {
-    if(ticks == 20){
-      ticks = 0;
-      return true;
-    }
-    ticks++;
-    return false;
+    return true;
   }
 
   @Override
   public void applyUpdateEffect(LivingEntity entity, int amplifier) {
     if (entity instanceof PlayerEntity player) {
-      player.addExperience(1);
+      ticks++;
+      if (ticks >= 20) {
+        player.addExperience(1);
+        ticks = 0;
+      }
     }
   }
 }

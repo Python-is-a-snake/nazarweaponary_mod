@@ -6,7 +6,6 @@ import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
-import net.minecraft.util.Hand;
 import net.minecraft.util.Rarity;
 import net.minecraft.world.World;
 import java.util.ArrayList;
@@ -33,7 +32,8 @@ public abstract class ModSword extends SwordItem {
 
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
-        if (entity instanceof PlayerEntity player && selected) {
+        //remove !player.getMainHandStack().isEmpty() && player.getMainHandStack().getItem() == this
+        if (entity instanceof PlayerEntity player && selected && !player.getMainHandStack().isEmpty() && player.getMainHandStack().getItem() == this) {
             for (StatusEffect effect : effects) {
                 StatusEffectInstance effectInstance = player.getStatusEffect(effect);
                 if (effectInstance == null || effectInstance.getDuration() < 2) {
