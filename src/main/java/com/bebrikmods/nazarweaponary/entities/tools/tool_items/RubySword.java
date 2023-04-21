@@ -9,5 +9,4 @@ public class RubySword extends ModSword{
         super(new RubyToolMaterial(), 5, -1.0F, StatusEffects.STRENGTH, StatusEffects.REGENERATION);
         ItemRegistrator.addItem(path, this);
     }
-
 }

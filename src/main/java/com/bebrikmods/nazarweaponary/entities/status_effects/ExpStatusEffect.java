@@ -7,9 +7,7 @@ import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.player.PlayerEntity;
 
 public class ExpStatusEffect extends StatusEffect {
-
-  private static final int TICKS_PER_SECOND = 60;
-  private int ticksElapsed;
+  private int ticks = 0;
 
   public ExpStatusEffect(String path) {
     super(StatusEffectCategory.BENEFICIAL, 0xFFFFFF);
@@ -18,16 +16,18 @@ public class ExpStatusEffect extends StatusEffect {
 
   @Override
   public boolean canApplyUpdateEffect(int duration, int amplifier) {
-    return true;
+    if(ticks == 20){
+      ticks = 0;
+      return true;
+    }
+    ticks++;
+    return false;
   }
 
   @Override
   public void applyUpdateEffect(LivingEntity entity, int amplifier) {
-    if (entity instanceof PlayerEntity playerEntity) {
-      if (ticksElapsed % TICKS_PER_SECOND == 0) {
-        playerEntity.addExperience(1);
-      }
-      ticksElapsed++;
+    if (entity instanceof PlayerEntity player) {
+      player.addExperience(1);
     }
   }
 }
