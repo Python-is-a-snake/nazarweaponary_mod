@@ -72,7 +72,6 @@ public abstract class ModSword extends SwordItem {
         removeEffectsOnPlayer((PlayerEntity) user);
     }
 
-
     @Override
     public void onCraft(ItemStack stack, World world, PlayerEntity player) {
         if (!world.isClient) {

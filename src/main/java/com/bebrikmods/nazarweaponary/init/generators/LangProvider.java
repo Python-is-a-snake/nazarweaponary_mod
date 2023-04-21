@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.block.Block;
 import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 
@@ -27,8 +28,8 @@ public class LangProvider extends FabricLanguageProvider {
 
         for(String key : ItemRegistrator.MOD_ITEM.keySet()){
             Item currentItem = ItemRegistrator.MOD_ITEM.get(key);
-            if(currentItem instanceof BlockItem){
-                continue;
+            if(currentItem instanceof ArmorItem || currentItem instanceof BlockItem){
+                continue; // Lang files collision here
             }
             translationBuilder.add(currentItem,
                     PREFIX + currentItem.getClass().getSimpleName().replaceAll("([a-z])([A-Z])", "$1 $2"));
