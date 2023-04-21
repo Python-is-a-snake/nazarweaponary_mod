@@ -7,7 +7,7 @@ import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.entity.player.PlayerEntity;
 
 public class ExpStatusEffect extends StatusEffect {
-  private int ticks = 0;
+  private int timer = 0; // таймер для відліку 5 секунд
 
   public ExpStatusEffect(String path) {
     super(StatusEffectCategory.BENEFICIAL, 0xFFFFFF);
@@ -15,18 +15,19 @@ public class ExpStatusEffect extends StatusEffect {
   }
 
   @Override
-  public boolean canApplyUpdateEffect(int duration, int amplifier) {
-    return true;
+  public void applyUpdateEffect(LivingEntity entity, int amplifier) {
+    if (entity instanceof PlayerEntity) {
+      if (timer == 0) { // якщо таймер досягнув 0
+        ((PlayerEntity) entity).addExperience(1); // додати 1 досвід гравцю
+        timer = 100; // встановити таймер на 5 секунд (100 тіків = 5 секунд)
+      } else {
+        timer--; // зменшити таймер
+      }
+    }
   }
 
   @Override
-  public void applyUpdateEffect(LivingEntity entity, int amplifier) {
-    if (entity instanceof PlayerEntity player) {
-      ticks++;
-      if (ticks >= 20) {
-        player.addExperience(1);
-        ticks = 0;
-      }
-    }
+  public boolean canApplyUpdateEffect(int duration, int amplifier) {
+    return true; // ефект може діяти протягом будь-якого часу
   }
 }

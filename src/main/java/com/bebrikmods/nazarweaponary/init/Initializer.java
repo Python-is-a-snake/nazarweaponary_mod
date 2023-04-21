@@ -18,6 +18,8 @@ import net.fabricmc.api.ModInitializer;
 import net.minecraft.block.Block;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.item.Item;
+import net.minecraft.item.ToolItem;
+import net.minecraft.item.ToolMaterial;
 
 public class Initializer implements ModInitializer{
 
@@ -44,12 +46,11 @@ public class Initializer implements ModInitializer{
 
     public static final StatusEffect EXP = new ExpStatusEffect("exp");
 
-    public static final Item RUBY_SWORD = new RubySword("ruby_sword");
-
-    public static final Item SAPPHIRE_SWORD = new SapphireSword("sapphire_sword");
+    public static final ToolItem RUBY_SWORD = new RubySword("ruby_sword");
+    public static final ToolItem SAPPHIRE_SWORD = new SapphireSword("sapphire_sword");
+    private static final ToolItem AMETHYST_SWORD = new AmethystSword("amethyst_sword");
 
     public static final Item SWORD_HANDLER = new SwordHandlerItem("sword_handler");
-    private static final Item AMETHYST_SWORD = new AmethystSword("amethyst_sword");
 
     public  void onInitialize() {
         new OreGenerator("ruby", RUBY_ORE, 5, 5, 65);
