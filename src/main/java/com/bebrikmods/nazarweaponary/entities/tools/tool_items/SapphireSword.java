@@ -5,8 +5,8 @@ import com.bebrikmods.nazarweaponary.init.registrators.ItemRegistrator;
 import net.minecraft.entity.effect.StatusEffects;
 
 public class SapphireSword extends ModSword {
-    public SapphireSword(String path) {
-        super(new SapphireToolMaterial(), 5, -1.0F, StatusEffects.SPEED);
+    public SapphireSword(String path, StatusEffects... statusEffects) {
+        super(new SapphireToolMaterial(), 5, -1.0F);
         ItemRegistrator.addItem(path, this);
     }
 }

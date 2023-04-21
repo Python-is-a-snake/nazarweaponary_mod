@@ -1,5 +1,6 @@
 package com.bebrikmods.nazarweaponary.entities.tools.tool_items;
 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
@@ -15,10 +16,16 @@ import java.util.List;
 public abstract class ModSword extends SwordItem {
 
     private final List<StatusEffect> effects;
-    private static final Settings settings = new Settings().fireproof().rarity(Rarity.EPIC).group(ItemGroup.COMBAT);
 
     protected ModSword(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, StatusEffect... statusEffects) {
-        super(toolMaterial, attackDamage, attackSpeed, settings);
+        super(toolMaterial, attackDamage, attackSpeed,
+                //SWORD SETTINGS
+                new FabricItemSettings()
+                        .maxDamage(toolMaterial.getDurability())
+                        .group(ItemGroup.COMBAT)
+                        .fireproof()
+                        .rarity(Rarity.EPIC));
+
         this.effects = new ArrayList<>(Arrays.asList(statusEffects));
     }
 
@@ -74,8 +81,6 @@ public abstract class ModSword extends SwordItem {
             }
         }
     }
-
-
 
 }
 
